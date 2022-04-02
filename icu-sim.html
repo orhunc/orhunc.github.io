@@ -1,0 +1,206 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>AR Game: ICU Simulation</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<header id="header" class="alt style2">
+					<a href=index.html class="logo"> <strong>Home</strong></a>
+					
+						<nav>
+							<a href="CV-DigitalArtist.pdf" text-align="right" target="_blank" >CV</a> 
+							<a href="#menu">Portfolio</a>
+						</nav>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="heartbeats.html">HeartBeats</a></li>
+						<li><a href="noiseflowfield.html">3D Noise Flowfield</a></li>
+						<li><a href="icu-sim.html">AR Game: ICU Simulation</a></li>
+						<li><a href="oculus-dancer.html">Dancer, the painter</a></li>
+						<li><a href="computer-graphics.html">Computer Graphics</a></li>
+						<li><a href="smart-robots.html">Smart Robots</a></li>
+					</ul>
+				
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style2">
+						<div class="inner">
+							<span class="image">
+								<img src="images/icu_image-banner.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>AR Game: ICU Simulation</h1>
+							</header>
+							<div class="content">
+								<p>a stress-inducing AR game to raise awareness for the working environement of healthcare workers</p>
+							</div>
+						</div>
+					</section>
+
+				<!-- Main -->
+				<div id="main">
+
+					<!-- One -->
+						<section id="one">
+							<div class="inner">
+								<div class="row">
+								<div class="column" >
+									<header class="major">
+										<h2>Project Overview</h2>
+									</header>
+									<p>The goal behind this immersive game was to raise awareness for the high stress levels of healthcare workers, 
+										which was particularly a hot topic during the pandemic. <br>
+									 In the research for XR, there is a significant focus on the visual aspects of reality and immersiveness. 
+										In this project, we wanted focus on the use of 3D spatial sounds to establish a realistic immersive experience.
+										
+										</p>
+
+										<p>Please put on your headphones while watching the demonstration below to hear the 3D sounds!</p>
+									</div>
+									<div class="column">
+										<header class="major">
+											<h2>My contributions</h2>
+										</header>
+										<p>
+											In a group of 3, we were all responsable for the programming on node.js - I worked on establishing a Bluetooth connection with the heart rate sensor used in the game
+											as well as creating and integrating 3D spatial sounds to the game using <strong>Resonance Audio</strong> by Google. 
+										</p>
+				
+										<p>
+										Other team members: Damian Dominik Martinez (TU Berlin), Janine Güldner (TU Berlin)
+										</p>
+									
+									</div>
+
+
+
+								</div>
+								<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/689656425?h=9db47b6bfb&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="AR Game: ICU Simulation"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>								
+						</section>
+
+					<!-- Two -->
+						<section id="two" class="spotlights">
+							<section>
+								<a  class="image">
+									<img src="images/pic08.jpg" alt="" data-position="center center" />
+								</a>
+								<div class="content">
+									<div class="inner">
+										<header class="major">
+											<h3>Concept</h3>
+										</header>
+										<p>The project, as part of the module "Introduction to Physiological Computing", 
+											was accompanied by the seminar "Affective Computing" which focused on <strong>affect detection using bio-signals</strong>  such as the heart rate.
+											Our initial inspiration was to develop an AR game, where the player needs to localise the source of sounds.
+											For this, we utilized 3D spatial sounds, which were created using Resonance Audio. 
+											The player needs to localize the source of the sounds to find the patients that need treatment. The simulation was meant to be stress-inducing and overwhelming for the player.
+											 To evaluate our success with that, the player was wearing a heart rate sensor (Polar H10) during the game.
+										</p>
+									</div>
+								</div>
+							</section>
+							<section>
+								<a class="image">
+									<img src="images/icu-software.jpg" alt="" data-position="top center" />
+								</a>
+								<div class="content">
+									<div class="inner">
+										<header class="major">
+											<h3>Behind the scenes: Technicalities</h3>
+										</header>
+									<p>The game was developed in <strong>node.js</strong> -an open-source, back-end JavaScript runtime environment. We used <strong>A-Frame</strong> which is an open-source web framework for building virtual reality experiences. 
+									The game utilizes 3D spatial sounds, which were created using <strong>Resonance Audio</strong>, to establish a realistic immersive experience. Once the game starts, the player needs to pair their herat rate sensor.
+								After the pairing, the player is directed to a demo wheere the game instructions are given. Before starting the game, the player is exposed to 10 seconds of white noise to lower their heart rate.</p>
+										
+									</div>
+								</div>
+							</section>
+							<section>
+								<a  class="image">
+									<img src="images/icu-setup.jpg" alt="" data-position="25% 25%" />
+								</a>
+								<div class="content">
+									<div class="inner">
+										<header class="major">
+											<h3>User Testing</h3>
+										</header>
+										<p>The game setting consisted of headphones for the 3D sounds and a smartphone attached to a head mount to run the web application.
+											<br>
+										An affective analysis was conducted using the heart rate data of the players to confirm that our goal of inducing high stress levels was accomplished.</p>
+
+
+										
+									</div>
+								</div>
+							</section>
+					
+						</section>
+
+					<!-- Three -->
+						<section id="three">
+							<div class="inner">
+								<header class="major">
+									<h2>Outlook</h2>
+								</header>
+								<p>Spatial sound represents an important cue for navigation in space. 
+									This project explored the possibility of localization in a tabletop augmented reality environment, based on sound cues.
+									In the research for augmented reality, there is a significant focus on the visual aspect.
+									and there is not enough investigation about the audio side of AR. I believe that the use spatial sounds are crucial to establish an 
+									realistic and immersive experience. 
+									
+									
+								</p>
+							
+							</div>
+						</section>
+
+				</div>
+
+
+			<!-- Footer -->
+			<footer id="footer">
+				<div class="inner">
+					<ul class="icons">
+						<li><a href="https://github.com/orhunc" class="icon brands alt fa-github" target="blank_"><span class="label">GitHub</span></a></li>
+						<li><a href="https://www.linkedin.com/in/orhun-caglidil/" class="icon brands alt fa-linkedin-in" target="blank_"><span class="label">LinkedIn</span></a></li>	
+					</ul>
+					<p></p>
+					
+					<ul class="copyright">
+						<li>Design: <a href="https://html5up.net" >HTML5 UP</a></li>
+					
+					</ul>						
+				</div>
+				
+			</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

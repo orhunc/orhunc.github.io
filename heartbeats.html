@@ -1,0 +1,270 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>HeartBeats</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<!-- Note: The "styleN" class below should match that of the banner element. -->
+					<header id="header" class="alt style2">
+						<a href=index.html class="logo"> <strong>Home</strong></a>
+					
+						<nav>
+							<a href="CV-DigitalArtist.pdf" text-align="right" target="_blank" >CV</a> 
+							<a href="#menu">Portfolio</a>
+						</nav>
+					</header>
+	
+				<!-- Menu -->
+					<nav id="menu">
+						<ul class="links">
+							<li><a href="heartbeats.html">HeartBeats</a></li>
+							<li><a href="noiseflowfield.html">3D Noise Flowfield</a></li>
+							<li><a href="icu-sim.html">AR Game: ICU Simulation</a></li>
+							<li><a href="oculus-dancer.html">Dancer, the painter</a></li>
+							<li><a href="computer-graphics.html">Computer Graphics</a></li>
+							<li><a href="smart-robots.html">Smart Robots</a></li>
+						</ul>
+					
+					</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style1">
+						<div class="inner">
+							<span class="image">
+								<img src="images/appimage-banner.jpeg" alt="" />
+							</span>
+							<header class="major">
+								<h1>HeartBeats</h1>
+							</header>
+							<div class="content">
+								<p>an XR performance installation using an interaction concept based on the heart rate of a dancer</p>
+							
+							</div>
+							
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+									<div class="row">
+									<div class="column" >
+										<header class="major">
+											<h2>Project Overview</h2>
+										</header>
+										<p>The XR performance installation "HeartBeats" is the result of a research project by TU Berlin and Empiria Theatre Zagreb. 
+											The goal of the research was the development of an interaction concept using XR to create experiences for an artistic performance.</p>
+
+										<p>The core inspiration behind this XR installation was the trend of using data to re-create. 
+											We wanted to explore working with "unconventional" data that have been so far explored less in the context of performing arts. Bio-signals such as heart rate, EEG, EMG have a promising quality that can allow performers a brand-new spectrum of possibilities for artmaking. For this project, we decided to work with the heart rate element to create a performance.
+											</p>
+	
+										</div>
+										<div class="column">
+											<header class="major">
+												<h2>My contributions</h2>
+											</header>
+											<p>
+												As my area of expertise lies in Android Development, I worked on the HR Simulator as well as the Android version of the AR Particle Flowfield.
+												As a dancer, I also took over the performance and choreography side (one could say "the frontend development" of the performance).
+											</p>
+					
+											<p>
+											Other team members: Elisabeth Oswald (TU Berlin), Anna Petrouffa (TU Berlin), Rhea Widmer (TU Berlin), Lorenzo Cocchia (Politecnico di Milano)
+											</p>
+										
+										</div>
+
+
+
+									</div>
+									<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/690889831?h=9f3f236b0e&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="HeartBeats - XR performance installation (with 3D Noise Flowfield in Android)"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>									</div>
+
+									
+									
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/winterf.jpg" alt="Winter Fashion 2022" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Concept</h3>
+											</header>
+											<p>
+												The installation consists of the following elements:
+												<ul>
+													<li>A dancer that wears a high accuracy <b>heart rate sensor</b> (Polar H10) on their chest</li>
+													<li>The application <b>EKG Sound Generator</b> developed in Android Studio connects to the sensor using Bluetooth protocols and generates sounds and visuals in relation to the heart rate data of the dancer</li>
+													<li>The audience watches the scene with the AR application <b>Noise Flowfield</b> developed in Unity 3D that creates a 3D audio visualization - 
+														the particles in the AR scene react to the sounds in the environment.</li>
+												</ul>
+											</p>
+											<p>Using these elements an interaction storyline was developed where: the dancer moves, their heart rate changes -> sound is generated -> AR particles react to the sounds</p>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/OrhunShort_Moment3.jpg" alt="" data-position="top center" />
+										<br>
+										<img src="images/OrhunShort_Moment9.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Behind the scenes: Technicalities</h3>
+											</header>
+											<p><b>EKG Sound Generator:</b> Using the Polar BLE SDK, an Android application was developed in Android Studio. 
+												Once the app connects via Bluetooth to the Polar H10 heart rate sensor, the heart rate can be seen on the screen. The sound generation starts once the heart rate reaches <em>100</em>. 
+												We used 18 different audios with different bpm's (beats per minute) and as the heart rate increases, the corresponding sound is generated. 
+											<br>	For an additional visual experience, we also created a heart animation that grows in size in relation to the heart rate.</p>
+											<p><b>Noise Flowfield:</b> Extracting the microphone input, the amplitude of the signal is used to compute the speed and the rotation of the particles by linear interpolation. 
+												Additionally, the spectrum is divided into 8 bands that are used to determine the color and size of the particles. - 
+												Developed in Unity3D.</p>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<a  class="image">
+										<img src="images/quVR.jpeg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Prototyping</h3>
+											</header>
+											<p>
+											Initially, our idea was to use the Oculus VR headset an AR device. Integrating the <strong>Oculus Passthorugh API</strong>, we could use the camera input of the Oculus, to which we added our Noise Flowfied.
+												However, for security and data privacy reasons, Oculus Quest does not allow to record applications with Passthrough API, meaning the AR experience of the performance using Oculus could not be recorded nor documented.
+											<br>
+											Due to unsuitability of Oculus Quest for the context of an AR performance, we stopped working on the prototype on Oculus Quest and decided to develop a version of the app <strong>for Android mobile devices</strong> .
+
+											</p>
+											<ul class="actions">
+												<li><a href="noiseflowfield.html" class="button">Check out the VR prototype without Passtrough API</a></li>
+											</ul>
+
+											<header class="major">
+												<h3>Exploring the heart rate</h3>
+											</header>
+											As I was going to be the dancer wearing the heart rate sensor and was fully responsible for developing the application that uses the heart rate,
+												I was intensively analyzing my heart rate data to understand how it could/should be used. The heart rate is a very individual bio-signal and 
+												therefore, the functionalities of the app had to be adapted to my heart rate range. <br>
+												The challange behind this was the fact that the heart rate is highly influenced by the person's emotional state. For example, the heart rate range that I used while developing at home 
+												was in no way close to the heart rate range I had when rehearsing with other people around - meaning "the nervosity of the performer" needed to be
+												 taken into account when creating the choreography.
+											
+
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/pic08.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Choreographic Research</h3>
+											</header>
+											<p>
+												My artistic interests as a dancer are highly inspired by Merce Cunningham and his enthusiasm about randomization in his dance pieces. 
+												Using this interaction concept, I explored a new way of creating a choreography. 
+												Over the course of the choreographic research, it seemed that <strong>one cannot "choregraph" their heart rate nor "fake" it</strong>. So, I took this idea of unpredictability and realness of the heart 
+												to create a choreography concept where the heart controls the whole performance, including the performer. 
+												Bringing together all these interactive elements, the flow of the performance was determined randomly by the state of the heart.
+
+											</p>
+											
+										</div>
+									</div>
+								</section>
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Outlook</h2>
+									</header>
+									<p>One of the challanges about this project was the fact that this was primarily a project of the technical university 
+										and therefore had an obvious emphasis on the research questions regarding the technological side. 
+										We were invited to develop a technically advanced product, while also keeping an artistic perspective on what we do. As much as I am proud of what we came up with, both technically and performance-wise, I do want to explore the potential of the technologies used in this installation more critically. 
+										<br>
+										As Steve Dixon put it in his book <em>"Digital Performance, A History of New Mediain Theather, Dance, Performance Art, and Installation":</em>
+										<br> <strong><em> Digital performance is by definition an additive process, where new technology is added to performance.</em></strong> 
+										<br> 
+										The questions of "how" this addition (or "augmentation") works and "what" it exactly adds, really interest me. I believe that digital technologies and interactive media have the power to challenge the traditional notions of the artwork, audience, and artist. 
+										</p>
+										<p>
+										 Furthermore, in dance and movement practice, one has a profound connection to the body. Therefore, I find that the use of bio-signals in and for a dance performance has a lot of choreographic material to be explored. 
+
+									</p>
+									
+									
+
+									
+								</div>
+								
+								
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://github.com/orhunc" class="icon brands alt fa-github" target="blank_"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/orhun-caglidil/" class="icon brands alt fa-linkedin-in" target="blank_"><span class="label">LinkedIn</span></a></li>	
+						</ul>
+						<p></p>
+						
+						<ul class="copyright">
+							<li>Design: <a href="https://html5up.net" >HTML5 UP</a></li>
+						
+						</ul>						
+					</div>
+					
+				</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

@@ -1,0 +1,211 @@
+<!DOCTYPE HTML>
+<!--
+	Forty by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>3D Noise Flowfied</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+				<header id="header" class="alt style2">
+					<a href=index.html class="logo"> <strong>Home</strong></a>
+					
+						<nav>
+							<a href="CV-DigitalArtist.pdf" text-align="right" target="_blank" >CV</a> 
+							<a href="#menu">Portfolio</a>
+						</nav>
+				</header>
+
+			<!-- Menu -->
+				<nav id="menu">
+					<ul class="links">
+						<li><a href="heartbeats.html">HeartBeats</a></li>
+						<li><a href="noiseflowfield.html">3D Noise Flowfield</a></li>
+						<li><a href="icu-sim.html">AR Game: ICU Simulation</a></li>
+						<li><a href="oculus-dancer.html">Dancer, the painter</a></li>
+						<li><a href="computer-graphics.html">Computer Graphics</a></li>
+						<li><a href="smart-robots.html">Smart Robots</a></li>
+					</ul>
+				
+				</nav>
+
+				<!-- Banner -->
+				<!-- Note: The "styleN" class below should match that of the header element. -->
+					<section id="banner" class="style1">
+						<div class="inner">
+							<span class="image">
+								<img src="images/Techno-moment.jpg" alt="" />
+							</span>
+							<header class="major">
+								<h1>3D Noise Particle Flowfield</h1>
+							</header>
+							<div class="content">
+								<p>Audio Visualization application in VR developed for Oculus Quest 2 headsets </p>
+							
+							</div>
+							
+						</div>
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- One -->
+							<section id="one">
+								<div class="inner">
+				
+						
+								<div class="row">
+									<div class="column" >
+										<header class="major">
+											<h2>Project Overview</h2>
+										</header>
+										<p>A VR application developed in Unity3D that immenses the user in a reactive 3D particle flowfield.
+											Prototyped to be used in a performance context, Noise Flowfield is a 3D audio visualization application that reacts to sounds in the environment.
+										</p>
+	
+										</div>
+										<div class="column">
+											<header class="major">
+												<h2>My contributions</h2>
+											</header>
+											<p>  
+											As I have work experience with Unity3D development using <b>XR Interaction Toolkit</b>, I took over the responsibility of development. 
+											Although I had never developed for a VR device before, the development process was quite smooth since Oculus Quest 2 has an Android operating system. 
+											</p>
+					
+											<p>
+											Other team members: Elisabeth Oswald (TU Berlin), Anna Petrouffa (TU Berlin), Rhea Widmer (TU Berlin), Lorenzo Cocchia (Politecnico di Milano)
+											</p>
+										
+										</div>
+
+
+
+									</div>
+
+									<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/690884340?h=a8a96ad3b3&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="3D Noise Flowfield - Audio Visualization in VR"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+
+								</div>
+
+								
+							</section>
+
+						<!-- Two -->
+							<section id="two" class="spotlights">
+								<section>
+									<a class="image">
+										<img src="images/pic08.jpg" alt="" data-position="center center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Concept</h3>
+											</header>
+											<p>
+											This prototype was developed in the early stages of the 6-months long research project "Future of Performing Arts with XR Technologies" by TU Berlin and Empiria Theatre Zagreb.
+											The goal of the research was the development of an interaction concept using XR to create experiences for artistic performance. Due to the unsuitability of Oculus VR Headsets in a performance context, this prototype was not developed further.
+										</p>
+												
+											<ul class="actions">
+												<li><a href="heartbeats.html" class="button">See the main project</a></li>
+											</ul>
+											
+										</div>
+									</div>
+								</section>
+								<section>
+									<a class="image">
+										<img src="images/pic09.jpg" alt="" data-position="top center" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Behind the scenes: Technicalities</h3>
+											</header>
+											<p> 
+												The particles in the scene react to the sounds in the environment: Extracting the microphone input, the amplitude of the signal is used to compute the speed and the rotation of the particles by <strong>linear interpolation</strong>. 
+												Additionally, the spectrum is divided into 8 bands that are used to determine the color and size of the particles.
+											</p>
+										
+										</div>
+									</div>
+								</section>
+
+								<!-- <section>
+									<a href="generic.html" class="image">
+										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Research Process and Prototype</h3>
+											</header>
+											<p> 
+
+											</p>
+										</div>
+									</div>
+								</section> -->
+							</section>
+
+						<!-- Three -->
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Outlook</h2>
+									</header>
+									<p> 
+									Although this prototype was left in early stages for performance-specific reasons, I believe that it still has 
+									strong potential for performance arts. An idea would be to use motion capture to create a real-time avatar of dancers. 	
+									Inspired by Merce Cunningham and his use of the software Life Forms, that portrayed outlines of the human figure in a three-dimensional space, 
+									motion capture brings another dimension to the discussion of what digital technologies can add to performances.
+
+	
+									</p>
+								</div>
+							</section>
+
+					</div>
+
+
+				<!-- Footer -->
+				<footer id="footer">
+					<div class="inner">
+						<ul class="icons">
+							<li><a href="https://github.com/orhunc" class="icon brands alt fa-github" target="blank_"><span class="label">GitHub</span></a></li>
+							<li><a href="https://www.linkedin.com/in/orhun-caglidil/" class="icon brands alt fa-linkedin-in" target="blank_"><span class="label">LinkedIn</span></a></li>	
+						</ul>
+						<p></p>
+						
+						<ul class="copyright">
+							<li>Design: <a href="https://html5up.net" >HTML5 UP</a></li>
+						
+						</ul>						
+					</div>
+					
+				</footer>
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
