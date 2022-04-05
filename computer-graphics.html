@@ -68,13 +68,16 @@
 										<header class="major">
 											<h2>Overview</h2>
 										</header>
-										<p>In my studies, I have mostly specialized in the field of generative computer graphics.
+										<p>In my studies, I have primarily occupied myself with generative computer graphics.
 											Computer Graphics is about digital models for threedimensional geometric objects as well as images. 
 											These shapes and images may represent approximations of the real world or could be synthetic, i.e., exist only in the computer. 
 											Goals of computer graphics research are the generation of plausible and informative images, and computation with reasonable resources, i.e. 
 											in a short amount of time with little storage requirements. 
-											The models and algorithms for this task combine knowledge from different areas of mathematics and computer science.
+											The models and algorithms for this task combine knowledge from different areas of mathematics and computer science, as well as research in mechanics of human vision.
 											</p>
+
+											<p>Here you can find a selection of techniques and models I have worked with over the course of my studies:
+												</p>
 
 								</div>
 							</section>
@@ -82,40 +85,69 @@
 						<!-- Two -->
 							<section id="two" class="spotlights">
 								<section>
+									
 									<a class="image">
-										<img src="images/pic08.jpg" data-position="center center" />
+										<br>
+										<br>
+										<br>
+										<br>
+										<!-- <img src="images/pic08.jpg" data-position="center center" /> -->
+										<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/695988947?h=1a1085ca4d&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"  title="shader_example_video_updated.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
 												<h3>Shading</h3>
 											</header>
-											
-											 
+											<p>
+												Shading is referred to as the implementation of the illumination model at the pixel points or polygon surfaces of the graphics objects.
+
+										Shading model is used to compute the intensities and colors to display the surface. The shading model has two primary ingredients: properties of the surface and properties of the illumination falling on it. The principal surface property is its reflectance, which determines how much of the incident light is reflected. 
+										If a surface has different reflectance for the light of different wavelengths, it will appear to be colored.
+										There are three main shading models that are used for different results: <b>Flat Shading</b> (per polygon), <b>Gouraud Shading</b> (per vertex), <b>Phong Shading </b> (per fragment).
+											</p>
+											<p>In the video to the left, you can find a demonstration of these shading models as well as the effect of different illumination models.</p>	
+	 
 										</div>
 									</div>
 								</section>
 
 								<section>
 									<a class="image">
-										<img src="images/pic09.jpg" alt="" data-position="top center" />
+										<br>
+										<br>
+										<br>
+										<br>
+										<!-- <img src="images/pic09.jpg" alt="" data-position="top center" /> -->
+										<div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/695988921?h=194649d1c7&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="2021-01-29 17-44-52.mp4"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 										
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Raycasting</h3>
+												<h3>Ray Tracing</h3>
 											</header>
 											
-										<p></p>
-												
+										<p>Ray Tracing is the act of using the path that light takes through pixels to create images. Ray tracing simulates the effects that light rays have on the objects they encounter. Images created with ray tracing are usually of better quality and have a higher degree of realism, 
+											but take longer to complete and requires more computing power. Therefore, ray tracing is most often used for creating still images.
+
+
+											<!-- <b>Ray Casting</b> is the most basic form of raytracing. Unlike other forms of ray tracing, where rays originate from a light source and bounce off objects to arrive at the observer, in Ray Casting, they're "cast" directly from the viewpoint. When cast rays intersect an object, the object's color and brightness at that point determines the value of one pixel in the final image. A direction vector represents the orientation of the observer extending forward. 											 -->
+										<br>
+										Ray Tracing is performed within the GPU pipeline and nowadays, there are GPU pipelines that can deal with raytracing efficiently which has a promising usage for future.
+										</p>
+										<p>In the video to the right, you can find a demonstration of you can observe the use of Ray Tracing with different shadings, illumination models as well as different level of recursions with reflective materials.</p>	
 										</div>
 									</div>
 								</section>
 								<section>
 									<a class="image">
-										<img src="images/pic08.jpg" alt="" data-position="25% 25%" />
-
+										<br>
+										<br>
+										<br>
+										<br>
+										<!-- <img src="images/pic08.jpg" alt="" data-position="25% 25%" /> -->
+										<div style="padding:56.66% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/695988866?h=94681feeae&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Computer Graphics: Texture Mapping"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
 									</a>
 									<div class="content">
 										<div class="inner">
@@ -123,9 +155,18 @@
 												<h3>Texture Mapping</h3>
 											</header>
 										<p>
-										
-										</p>
+											Texture mapping is a method of adding realism to a computer-generated graphic. An image (the texture) is added (mapped) to a simpler shape that is generated in the scene, like a decal pasted to a flat surface. This reduces the amount of computing needed to create the shapes and textures in the scene. 
+											For instance, a sphere may be generated and a face texture mapped, to remove the need for processing the shape of the nose and eyes.
+
+											<br>
+											As graphics cards become more powerful, in theory, texture mapping for lighting becomes less necessary and bump mapping or increased polygon counts take over. 
+											However, in practice, the trend has recently been towards larger and more varied texture images, 
+											together with increasingly sophisticated ways to combine multiple textures for different aspects of the same object. 											
+											The way the resulting pixels on the screen are calculated from the texels (texture pixels), is governed by texture filtering. 
 											
+										</p>
+										<p>In the video to the left, you can find a demonstration of how textures (on the left side of the video) can be mapped into (complex) shapes under the use of different mapping and shading models.</p>	
+
 										
 										</div>
 									</div>
@@ -140,6 +181,11 @@
 										<h2>Outlook</h2>
 									</header>
 									<p>	
+										The research in computer graphics is the hidden actor behind the significant improvements in realistic CGI (computer-generated imagery) that is used in games as well as movies. Also for realism in the context of XR world, advanced computer graphics play a crucial role.
+										<br>
+										Exactly this search of "realism" in virtualities intrigues me. What is percieved as real? 
+										And how much of realism do we really want to achieve? Could this be a desperate escape from  thre "real" reality? I seek to investigate these questions in future work and oppurtinites. 
+
 									</p>
 						
 								</div>
